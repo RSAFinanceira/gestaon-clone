@@ -60,7 +60,7 @@ export default function WABAs() {
             padding: "6px 14px", border: "none", borderRadius: 20, cursor: "pointer",
             background: aba === a ? "#22c55e" : "#141414",
             color: aba === a ? "#000" : "#aaa", fontWeight: aba === a ? 700 : 400, fontSize: 12,
-            border: "1px solid #1e1e1e" as any,
+            outline: "1px solid #1e1e1e",
           }}>{a === "Sincronizar" ? `↺ ${a} 12:19:07` : a === "Disparador" ? `↑ ${a}` : a}</button>
         ))}
         <div style={{ marginLeft: "auto", display: "flex", gap: 8 }}>
