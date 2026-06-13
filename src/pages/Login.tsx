@@ -8,6 +8,10 @@ export default function Login({ onLogin }: { onLogin: () => void }) {
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!email || !senha) { setErro("Preencha todos os campos."); return; }
+    if (email !== "rsacred@rsapromotora.com" || senha !== "Rsa10@") {
+      setErro("E-mail ou senha incorretos.");
+      return;
+    }
     onLogin();
   }
 
